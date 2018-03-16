@@ -5,17 +5,7 @@ import static java.lang.Math.*;
 
 public class JavaTest {
 
-public class WrappereString
-{
-    public void replace(char oldchar, char newchar)
-    {
 
-    }
-    public void delete(char newchar)
-    {
-
-    }
-}
 
 
     static int sint;
@@ -133,8 +123,6 @@ public class WrappereString
         for(char ch[]: c1) {
             System.out.println(ch);
         }
-        WrapperString wrapperString=new WrapperString("s");
-        wrapperString.replace('s','r');
         /** @author Nikita
          * @version 1.3.15
          * @param

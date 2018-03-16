@@ -40,6 +40,32 @@ public class WrapperString {
     }
     public void replace(char oldchar, char newchar)
     {
+        char temp;
+        temp=oldchar;
+        oldchar=newchar;
+        newchar=temp;
+        System.out.println("replace: "+oldchar+" "+newchar);
+    }
 
+
+    public static void main(String[] args) {
+    WrapperString anonim= new WrapperString("r")
+    {
+        public void replace(char oldchar, char newchar)
+        {
+            char temp;
+            temp=oldchar;
+            oldchar=newchar;
+            newchar=temp;
+            System.out.println("anonim replace: "+oldchar+" "+newchar);
+        }
+        public void delete(char newchar)
+        {
+            System.out.println("anonim delete");
+        }
+    };
+    anonim.replace('a','b');
+    WrapperString wrapperString= new WrapperString("s");
+    wrapperString.replace('d','v');
     }
 }
